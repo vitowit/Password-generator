@@ -6,10 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Password Generator</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <input type="text" name="password" id="password" placeholder="password will show up here">
         <p id="text">xd</p>
     </body>
+    <script>
+        const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  
+        function f1() 
+        {
+          let result = alphabet[Math.floor(Math.random() * alphabet.length)];
+          document.querySelector('#password').value = result;
+        }
+  
+        window.onload = f1;
+      </script>
 </html>
