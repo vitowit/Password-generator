@@ -6,4 +6,16 @@
 body
 {
     box-sizing: border-box;
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+input[type="text"]
+{
+    width: 30vw;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-left: 35vw;
+    font-size: 2rem;
 }
