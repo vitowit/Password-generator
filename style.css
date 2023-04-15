@@ -11,7 +11,7 @@ body
     height: 100vh;
     color: white;
 }
-input[type="text"]
+input[type="number"], input[type="text"]
 {
     width: 30vw;
     height: 10vh;

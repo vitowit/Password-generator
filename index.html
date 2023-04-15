@@ -9,17 +9,33 @@
     </head>
     <body>
         <input type="text" name="password" id="password" placeholder="password will show up here">
-        <p id="text">xd</p>
+        <p>password length:</p>
+        <input type="number" id="length" min="8" max="50">
+        <input type="submit" id="submit" value="generuj" onclick="generatePassword()">
     </body>
     <script>
-        const alphabet = "abcdefghijklmnopqrstuvwxyz";
-  
-        function f1() 
-        {
-          let result = alphabet[Math.floor(Math.random() * alphabet.length)];
-          document.querySelector('#password').value = result;
-        }
-  
-        window.onload = f1;
-      </script>
+      //arrays//
+      
+      //default array
+      const alphabet_sl = "abcdefghijklmnopqrstuvwxyz";
+      //big letters
+      const alphabet_bl = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      //numbers
+      const alphabet_n = "0123456789";
+
+      //generate password
+      function generatePassword() 
+      {
+      const lengthInput = document.querySelector('#length');
+      const outputText = document.querySelector('#password');
+      const length = lengthInput.value;
+
+      let result = '';
+      for(i=0; i<length; i++)
+      {
+        result += alphabet[Math.floor(Math.random() * alphabet.length)];
+      }
+      outputText.value = result;
+      }
+    </script>
 </html>
