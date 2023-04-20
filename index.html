@@ -8,17 +8,19 @@
   <title>Password Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <input type="text" name="password" id="password" placeholder="password will show up here">
-  <p>password length:</p>
-  <input type="number" id="length" min="8" max="50">
-  <input type="submit" id="submit" value="generuj" onclick="generatePassword()">
-
-  <input type="checkbox" class="checkbox" checked>
-  <input type="checkbox" class="checkbox">
-  <input type="checkbox" class="checkbox">
-  <input type="checkbox" class="checkbox">
+  <div id="container">
+    <input type="text" name="password" id="password" placeholder="password will show up here">
+    <p id="idk">password length:</p>
+    <input type="number" id="length" min="8" max="50">
+    <div id="boxForCheckbox">
+      <p>letters</p><input type="checkbox" class="checkbox" checked>
+      <p>big letters</p><input type="checkbox" class="checkbox">
+      <p>numbers</p><input type="checkbox" class="checkbox">
+      <p>special sings</p><input type="checkbox" class="checkbox">
+    </div>
+    <input type="submit" id="submit" value="generuj" onclick="generatePassword()">
+  </div>
 </body>
 <script>
   //1 checkbox always checked
