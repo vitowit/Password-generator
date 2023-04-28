@@ -50,11 +50,19 @@ input[type="submit"]
 #boxForCheckbox
 {
     margin-top: 4vh;
-    width: 20vw;
+    width: 10vw;
     height: 30vh;
-    background-color: red;
+    font-size: 1.1rem;
 }
-#boxForCheckbox p, #boxForCheckbox input 
+#left
 {
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+#right
+{
+    width: 20%;
+    height: 100%;
     float: left;
 }

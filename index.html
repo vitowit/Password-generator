@@ -14,12 +14,20 @@
     <p id="idk">password length:</p>
     <input type="number" id="length" min="8" max="50">
     <div id="boxForCheckbox">
-      <p>letters</p><input type="checkbox" class="checkbox" checked>
-      <p>big letters</p><input type="checkbox" class="checkbox">
-      <p>numbers</p><input type="checkbox" class="checkbox">
-      <p>special sings</p><input type="checkbox" class="checkbox">
+      <div id="left">
+        <p>letters</p>
+        <p>big letters</p>
+        <p>numbers</p>
+        <p>special sings</p>
+      </div>
+      <div id="right">
+        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox">
+      </div>
     </div>
-    <input type="submit" id="submit" value="generuj" onclick="generatePassword()">
+    <input type="submit" id="submit" value="generate" onclick="generatePassword()">
   </div>
 </body>
 <script>
